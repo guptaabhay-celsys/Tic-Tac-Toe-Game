@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewrolport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(79, 79, 79);
+        }
+        .result-div{
+            margin: auto;
+            width: 50%;
+            height: 200px;
+            background-color: cornflowerblue;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hidden{
+            display: none;
+        }
+
+        .boxes{
+            margin: auto;
+            display: flex;
+            width: 40%;
+            flex-wrap: wrap;
+            gap: 4px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .box{
+            width: 130px;
+            height: 130px;
+            border: none;
+            background-color: lightyellow;
+            border-radius: 5px;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+            color: red;
+            text-decoration: bold;
+            font-size: 70px;
+        }
+
+        .reset, .newGame{
+            background-color: darkblue;
+            color: white;
+            margin-top: 20px;
+            border: 1px solid gray;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .tictactoe{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="result-div hidden">
+        <h1 class="winText"></h1>
+        <button class="newGame">New Game</button>
+    </div>
+
+    <div class="tictactoe">
+        <div class="boxes">
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+        </div>
+        <div>
+            <button class="reset">Reset Game</button>
+        </div>
+    </div>
+    
+    <script src="tictactoe.js"></script>
+</body>
+</html>
